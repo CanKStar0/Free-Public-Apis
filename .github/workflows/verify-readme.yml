@@ -15,16 +15,8 @@ jobs:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/checkout@v7
-        with:
-          repository: CanKStar0/Free-API
-          ref: main
-          path: upstream-source
-          persist-credentials: false
       - uses: actions/setup-node@v7
         with:
           node-version: 20
-      - name: Check README against the canonical API catalog
-        env:
-          UPSTREAM_API_INDEX: upstream-source/github-api-directory/README.md
-        run: node scripts/sync-readme.mjs --check
+      - name: Validate category navigation and API links
+        run: node scripts/verify-readme.mjs

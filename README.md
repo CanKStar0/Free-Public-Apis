@@ -1195,4 +1195,4 @@ The directory mirrors FreeAPI's curated catalog. Provider documentation, access 
 
 ## Source and updates
 
-The canonical catalog is maintained in [CanKStar0/Free-API](https://github.com/CanKStar0/Free-API). This README is synchronized from that project's generated index. To suggest a catalog correction, open an issue in the source repository; generated entries should not be edited by hand here.
+The canonical catalog is maintained in [CanKStar0/Free-API](https://github.com/CanKStar0/Free-API). Its catalog workflow publishes README updates here whenever the source catalog changes. To suggest a catalog correction, open an issue in the source repository; generated entries should not be edited by hand here.
