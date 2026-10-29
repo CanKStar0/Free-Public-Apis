@@ -1,0 +1,33 @@
+name: Suggest a catalog correction
+description: Report an API name, category, or catalog detail that should be reviewed.
+title: "Catalog correction: "
+labels: [catalog-correction]
+body:
+  - type: markdown
+    attributes:
+      value: "This repository mirrors the catalog maintained in [Free-API](https://github.com/CanKStar0/Free-API). Approved catalog changes are made there and then synchronized here."
+  - type: input
+    id: api-name
+    attributes:
+      label: API name
+      placeholder: Open-Meteo
+    validations:
+      required: true
+  - type: dropdown
+    id: correction-type
+    attributes:
+      label: What needs review?
+      options:
+        - API name
+        - Category
+        - API is no longer available
+        - Other catalog detail
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Suggested correction and evidence
+      description: Link to the provider or explain the evidence for this change.
+    validations:
+      required: true

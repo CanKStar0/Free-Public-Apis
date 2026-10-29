@@ -1,0 +1,29 @@
+name: Report a broken FreeAPI detail link
+description: Tell us when an API link in this directory does not open its FreeAPI detail page.
+title: "Broken API detail link: "
+labels: [broken-link]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping keep the directory usable. Please include the API name and the link that failed."
+  - type: input
+    id: api-name
+    attributes:
+      label: API name
+      placeholder: Open-Meteo
+    validations:
+      required: true
+  - type: input
+    id: directory-link
+    attributes:
+      label: Link from this README
+      placeholder: https://findfreeapi.com/en/service/...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened?
+      placeholder: Describe the broken page or redirect.
+    validations:
+      required: true

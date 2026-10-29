@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Propose an API catalog change
+    url: https://github.com/CanKStar0/Free-API/issues/new/choose
+    about: Catalog additions and edits are reviewed in the canonical Free-API project.
+  - name: Ask a general question or share an idea
+    url: https://github.com/CanKStar0/Free-Public-Apis/discussions
+    about: Use Discussions for questions and ideas that are not broken-link reports.
